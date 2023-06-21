@@ -45,6 +45,21 @@ public class C02_DropdownMenu extends TestBase{
         Assert.assertTrue(sonucSayisiInt>10);
 
         // sectigimiz opsiyonu yazdirin
+
+         /*
+            Biz daha once dropdown menuyu locate etmis
+            ve bu menuyu kullanarak select objesi olusturmustuk
+
+            ANCAK
+            arama yaptirdigimizda HTML kodlar yenilendigi icin
+            eski elementleri BULAMAYABILIR
+            bu durumda "stale element" / bayat element uyarisi verir
+
+            Yapmamiz gereken :
+            Yeniden obje olusturmak degil
+            var olan objelere
+            ayni degerleri tekrar atamaktir.
+         */
         ddm=driver.findElement(By.id("searchDropdownBox"));
         select=new Select(ddm);
 

@@ -7,16 +7,21 @@ import org.openqa.selenium.Keys;
 import utilities.TestBase;
 
 public class C04_JsAlerts extends TestBase {
-    /*
-        Birtesti calistirirken web sayfasi bize uyari verebilir
-        buna Aletr denir
-
-        eger bu uyariyi sag tus yapabiliyorsak bu bir html alert dir
-        ve diger tum Webelementler gibi locate edilebilirlerve kullanilabilirler
+   /*
+        Bir testi calistirirken
+        web sayfasi bize uyari verebilir(alert)
+        EGER bu uyariyi sag click ile inspect edebiliyorsak
+        bu bir HTML alert'dir
+        ve diger tum HTML Webelement'ler gibi
+        locate edilebilir ve kullanilabilirler
 
         ANCAK
         sag click yapip inspect edemiyorsak
-        bunlar javascript alert olabilir
+        bunlar javascript alert olabilirler
+
+        Js alert'ler locate edilemez
+        sadece driver'imizi o alert'lere switch yapip
+        o alert'lerde istenen islemleri yapabiliriz
 
      */
 
