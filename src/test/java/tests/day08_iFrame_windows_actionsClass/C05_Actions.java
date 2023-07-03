@@ -20,6 +20,7 @@ public class C05_Actions extends TestBaseQuit {
         Actions actions = new Actions(driver);
         WebElement ciziliAlanElementi = driver.findElement(By.id("hot-spot"));
         actions.contextClick(ciziliAlanElementi).perform();
+        bekle(1);
         //4- Alert’te cikan yazinin “You selected a context menu” oldugunu test edin.
 
         String expectedAlertYazisi = "You selected a context menu";
