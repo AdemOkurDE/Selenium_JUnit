@@ -1,12 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
-      steps {
-        echo 'Adm'
-      }
-    }
-
     stage('Test') {
       parallel {
         stage('Test') {
@@ -21,12 +15,6 @@ pipeline {
           }
         }
 
-      }
-    }
-
-    stage('End') {
-      steps {
-        echo 'The End'
       }
     }
 
