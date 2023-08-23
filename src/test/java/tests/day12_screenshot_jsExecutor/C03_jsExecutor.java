@@ -32,13 +32,14 @@ public class C03_jsExecutor extends TestBase {
 
         jse.executeScript("arguments[0].scrollIntoView(true);",goTocareerButonu);
 
-        bekle(2);
+        bekle(1);
+        jse.executeScript("arguments[0].click();",goTocareerButonu);
+       // goTocareerButonu.click();
 
-        goTocareerButonu.click();
+       // jse.executeScript("alert('yasasinnnn');");  // bu kod calisirsa safya kapanamadigi icin test passed olmuyor
 
-        jse.executeScript("alert('yasasinnnn');");
+        bekle(1);
 
-        bekle(3);
 
     }
 }

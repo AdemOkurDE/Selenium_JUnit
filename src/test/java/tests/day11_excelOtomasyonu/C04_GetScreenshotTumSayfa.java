@@ -7,6 +7,7 @@ import org.openqa.selenium.*;
 import utilities.TestBase;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 public class C04_GetScreenshotTumSayfa extends TestBase {

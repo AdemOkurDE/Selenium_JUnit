@@ -27,7 +27,12 @@ public class C07_FileUpload extends TestBase {
         //masaustune kopyaladigimiz avatar.png dosyasini secelim.
 
         WebElement chooseFileButonElementi = driver.findElement(By.id("file-upload"));
-        String dinamikDosyaYolu = System.getProperty("user.home") + "/Desktop/avatar.png";
+        String dinamikDosyaYolu = System.getProperty("user.home") + "\\Downloads\\avatar.png";
+       // "C:\Users\ademo\Downloads\avatar.png"
+        //"C:\Users\ademo\OneDrive\Masaüstü\avatar.png"
+        System.out.println(
+                dinamikDosyaYolu
+        );
 
         chooseFileButonElementi.sendKeys(dinamikDosyaYolu);
 

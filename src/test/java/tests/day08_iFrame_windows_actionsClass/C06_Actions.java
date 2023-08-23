@@ -10,7 +10,7 @@ import utilities.TestBase;
 public class C06_Actions extends TestBase {
 
     @Test
-    public void test01(){
+    public void test01() throws InterruptedException {
 
         //1- https://demoqa.com/droppable adresine gidelim
         driver.get("https://demoqa.com/droppable");
@@ -18,9 +18,9 @@ public class C06_Actions extends TestBase {
         WebElement tasinacakElement = driver.findElement(By.xpath("//div[@id='draggable']"));
         WebElement hedefAlan = driver.findElement(By.xpath("(//div[@id='droppable'])[1]"));
         Actions actions = new Actions(driver);
-
+        Thread.sleep(3000);
         actions.dragAndDrop(tasinacakElement,hedefAlan).perform();
-
+        Thread.sleep(3000);
         //3- “Drop here” yazisi yerine “Dropped!” oldugunu test edin
 
         WebElement droppedYaziElementi = driver.findElement(By.xpath("//p[text()='Dropped!']"));
